@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SimpleBudget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <h1>Simple Budget</h1>
+
+<div class="main-panel">
+  <div class="info-entry">
+    <div class="budget-form">
+    <div class="form-title"> Monthly Budget: </div>
+    <input id="budget-text" type="text" name="Monthly budget">
+    <button class="submit-button" id="budget-button" type="button" name="budget-button">Submit</button>
+    <button class="submit-button" id="change-button" type="button" name="change-button">Change Budget</button>
+  </div>
+
+    <div class="expense-form">
+    <div class="form-title">
+    Enter Expense name:</div>
+    <input id='expense-name-text' type="text" name="Add expense name">
+    <div class="form-title">
+    Enter Expense amount:</div>
+    <input id='expense-amount-text' type="text" name="Add expense amount">
+    <button class="submit-button" id="expense-button" type="button" name="expense-button">Submit</button>
+  </div>
+  </div>
+
+
+<div class="breakdown">
+  <div class="bud-display" id="budget-display">Budget: £0</div>
+  <div class="bud-display" id="remaining-budget-display">Remaining Budget: £0</div>
+  <h3>Expense List:</h3>
+  <ul id="expense-list">
+  </ul>
+</div>
+</div>
+
+<canvas id="budget-chart"></canvas>
+
+<script src="js/scripts.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+</body>
+</html>
