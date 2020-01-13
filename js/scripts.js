@@ -159,9 +159,9 @@ function generateChart() {
     datasets: [{
         data: dataArray,
 
-        backgroundColor: ["lavender", "LightGreen", "Orchid", "LightPink", "LightBlue", "NavajoWhite",
-        "MediumSeaGreen", "AntiqueWhite", "LightSlateGray", "Aquamarine"
-        ]
+        backgroundColor: [ '#ccdbd2','#5cb85c', '#D74B4B', '#6685a4', '#f0ad4e', '#5bc0de', '#EE82EE' ],
+
+  hoverBackgroundColor: ['#ccdbd2','#5cb85c', '#D74B4B', '#6685a4', '#f0ad4e', '#5bc0de', '#EE82EE'],
     }],
 
     labels: labelArray,
